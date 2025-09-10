@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "eeb0352e-33c2-4449-9c77-04b1cca52191")
 	(paper "A4")
+	(title_block
+		(title "Multiscope Board 1")
+		(date "2025-09-10")
+		(rev "v0.1")
+		(company "github.com/SuperliminalDefenestration")
+		(comment 1 "Designed by Pengalu")
+		(comment 2 "Provided under CERN-OHL-S-2.0")
+	)
 	(lib_symbols
 		(symbol "Battery_Management:MCP73831-2-MC"
 			(exclude_from_sim no)
@@ -4571,6 +4579,18 @@
 		(uuid "8fc4f47b-c4da-44a4-8884-f1699ad7ecc6")
 	)
 	(junction
+		(at 228.6 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94b7c92b-fb4b-4d94-a55b-cc1fcd5c4d96")
+	)
+	(junction
+		(at 228.6 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c5a3325-406a-4332-aa5f-c4be934b8692")
+	)
+	(junction
 		(at 256.54 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4684,6 +4704,10 @@
 		(color 0 0 0 0)
 		(uuid "f9a6f362-d1b1-4599-a944-2b6aa1865157")
 	)
+	(no_connect
+		(at 214.63 49.53)
+		(uuid "abae70db-ff79-4ef5-b82c-0df7983b7221")
+	)
 	(wire
 		(pts
 			(xy 48.26 118.11) (xy 43.18 118.11)
@@ -4753,6 +4777,16 @@
 			(type default)
 		)
 		(uuid "0f813c13-ea06-40dd-904b-f8894b3ec619")
+	)
+	(wire
+		(pts
+			(xy 214.63 41.91) (xy 228.6 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ff03d8-4afa-4d87-a0b7-57808525fdfc")
 	)
 	(wire
 		(pts
@@ -5056,6 +5090,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 41.91) (xy 233.68 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cfca0a1-c620-41e9-88ef-4f5b7f1e11f4")
+	)
+	(wire
+		(pts
 			(xy 68.58 39.37) (xy 68.58 43.18)
 		)
 		(stroke
@@ -5346,6 +5390,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 44.45) (xy 228.6 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f21a55-fc32-4a9e-8cb2-2b86b38cc609")
+	)
+	(wire
+		(pts
 			(xy 72.39 54.61) (xy 73.66 54.61)
 		)
 		(stroke
@@ -5353,6 +5407,16 @@
 			(type default)
 		)
 		(uuid "a80369c8-eecb-4bdc-9f10-4b2bea3f3001")
+	)
+	(wire
+		(pts
+			(xy 228.6 44.45) (xy 233.68 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a935b572-6ced-435a-86b5-f0e2208f77d6")
 	)
 	(wire
 		(pts
@@ -5730,6 +5794,28 @@
 		)
 		(uuid 939d9dc6-d9ea-4336-8df9-c25f63ff1425)
 	)
+	(rectangle
+		(start 179.07 16.51)
+		(end 241.3 76.2)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ca8c18a1-8a2d-44c4-be47-c70790be5a69)
+	)
+	(text "Metering Probe\n"
+		(exclude_from_sim no)
+		(at 233.172 73.406 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "449711cc-b871-4298-9d12-e0b94e1912cf")
+	)
 	(text "ADC Drivers\n"
 		(exclude_from_sim no)
 		(at 124.714 14.986 0)
@@ -5881,6 +5967,28 @@
 		(uuid "2633df11-1eaa-444b-8bea-7202f1aca805")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 89.3452 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 83.82 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "29b6d543-7eb8-4a0b-a148-49be0b96630d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.3128 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,6 +6284,50 @@
 			)
 		)
 	)
+	(global_label "SCL"
+		(shape input)
+		(at 233.68 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93c4a000-c66e-48e1-b510-ff4034c66bc0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.1728 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 83.82 120.65 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ce286ee-4acb-4cdc-a7f9-af3fb3d9ebbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.3733 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ADC123_IN2"
 		(shape input)
 		(at 135.89 86.36 180)
@@ -6348,6 +6500,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 233.68 41.91 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea3dbd73-b865-4e72-92c6-f1d4020185cb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.2333 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -8222,6 +8396,72 @@
 			(project "Multiscope"
 				(path "/eeb0352e-33c2-4449-9c77-04b1cca52191"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 228.6 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cdfb8cd-ebc8-4b50-8694-b0273598fc55")
+		(property "Reference" "#PWR042"
+			(at 228.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 228.6 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 228.6 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a439b74-5af9-4b8f-bfe3-a8142c6fc46f")
+		)
+		(instances
+			(project "Multiscope"
+				(path "/eeb0352e-33c2-4449-9c77-04b1cca52191"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -10802,6 +11042,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 228.6 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7c51479-f70e-416b-807b-f6c7cccfc57c")
+		(property "Reference" "R14"
+			(at 231.14 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 231.14 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.616 48.514 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 228.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "637dcde9-e239-4578-8b58-daa5cd350077")
+		)
+		(pin "2"
+			(uuid "48023c2c-5c84-489a-ac1a-e5430155feb7")
+		)
+		(instances
+			(project "Multiscope"
+				(path "/eeb0352e-33c2-4449-9c77-04b1cca52191"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Switching:TSR_1-2433")
 		(at 264.16 59.69 270)
 		(unit 1)
@@ -10937,6 +11247,76 @@
 			(project "Multiscope"
 				(path "/eeb0352e-33c2-4449-9c77-04b1cca52191"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 228.6 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2f53714-eadc-4ba3-a94d-25cc623b427a")
+		(property "Reference" "R13"
+			(at 231.14 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 231.14 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.616 38.354 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 228.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2bbbbc1-f56c-47b3-9fd7-497b080694c1")
+		)
+		(pin "2"
+			(uuid "c6082f4d-a71f-4625-bdca-97bde2137850")
+		)
+		(instances
+			(project ""
+				(path "/eeb0352e-33c2-4449-9c77-04b1cca52191"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -12166,6 +12546,72 @@
 			(project "Multiscope"
 				(path "/eeb0352e-33c2-4449-9c77-04b1cca52191"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 228.6 52.07 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2200001-507a-4011-b395-32f632285072")
+		(property "Reference" "#PWR043"
+			(at 228.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 228.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 228.6 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d19ace19-e307-4b10-b109-3ccff8dd53d2")
+		)
+		(instances
+			(project "Multiscope"
+				(path "/eeb0352e-33c2-4449-9c77-04b1cca52191"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
