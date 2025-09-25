@@ -224,7 +224,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -386,6 +386,10 @@
     [
       "eeb0352e-33c2-4449-9c77-04b1cca52191",
       "Root"
+    ],
+    [
+      "b9c58fc8-5833-4cda-a962-69a2c1f6b1c8",
+      "slaveMCU"
     ]
   ],
   "text_variables": {}
